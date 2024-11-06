@@ -1,35 +1,50 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    return (
+        <>
+            <div className={'main'}>
+                <a href="#" target="_blank">
+                    <header className="top-header">
+                    </header>
+                    <div>
+                        <div className="starsec"></div>
+                        <div className="starthird"></div>
+                        <div className="starfourth"></div>
+                        <div className="starfifth"></div>
+                    </div>
+                    <div className="lamp__wrap">
+                        <div className="lamp">
+                            <div className="cable"></div>
+                            <div className="cover"></div>
+                            <div className="in-cover">
+                                <div className="bulb"></div>
+                            </div>
+                            <div className="light"></div>
+                        </div>
+                    </div>
+
+                    <section className="error">
+                        <div className="error__content">
+                            <div className="error__message message">
+                                <h1 className="message__title">Page Not Found</h1>
+                                <p className="message__text">We&#39;re sorry, the page you were looking for isn't found
+                                    here. The
+                                    link you followed may either be broken or no longer exists. Please try again, or
+                                    take a
+                                    look at our.</p>
+                            </div>
+                            <div className="error__nav e-nav">
+                                <a href="#" target="_blanck"
+                                   className="e-nav__link"></a>
+                            </div>
+                        </div>
+                    </section>
+                </a>
+            </div>
+        </>
+    )
 }
 
 export default App
